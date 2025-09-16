@@ -71,8 +71,7 @@ WHERE
     AND 
     TO_CHAR(sale_date, 'YYYY-MM') = '2022-11'
     AND
-    quantity >= 4
-    ***
+    quantity >= 4***
 **3.Write a SQL query to calculate the total sales (total_sale) for each category.:**
 ***sql
 SELECT 
@@ -80,8 +79,7 @@ SELECT
     SUM(total_sale) as net_sale,
     COUNT(*) as total_orders
 FROM retail_sales
-GROUP BY 1
-***
+GROUP BY 1***
 **4.Write a SQL query to find the average age of customers who purchased items from the 'Beauty' category.:**
 ***sql
 SELECT
@@ -90,8 +88,7 @@ FROM retail_sales
 WHERE category = 'Beauty'
 Write a SQL query to find all transactions where the total_sale is greater than 1000.:
 SELECT * FROM retail_sales
-WHERE total_sale > 1000
-***
+WHERE total_sale > 1000***
 **5.Write a SQL query to find the total number of transactions (transaction_id) made by each gender in each category.:**
 ***sql
 SELECT 
@@ -103,8 +100,7 @@ GROUP
     BY 
     category,
     gender
-ORDER BY 1
-***
+ORDER BY 1***
 **6.Write a SQL query to calculate the average sale for each month. Find out best selling month in each year:**
 ***sql
 SELECT 
